@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF2C5225224E6DB9008B8123 /* HJHMovieItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2C5224224E6DB9008B8123 /* HJHMovieItem.m */; };
+		AF2C5228224E7204008B8123 /* HJHMovieItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2C5227224E7204008B8123 /* HJHMovieItemController.m */; };
+		AF2C522B224E797F008B8123 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C522A224E797F008B8123 /* MovieListTableViewController.swift */; };
+		AF2C522D224E7995008B8123 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2C522C224E7995008B8123 /* MovieTableViewCell.swift */; };
 		AFC4D240224E6B2000AEF25E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC4D23F224E6B2000AEF25E /* AppDelegate.m */; };
-		AFC4D243224E6B2000AEF25E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC4D242224E6B2000AEF25E /* ViewController.m */; };
 		AFC4D246224E6B2000AEF25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4D244224E6B2000AEF25E /* Main.storyboard */; };
 		AFC4D248224E6B2100AEF25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC4D247224E6B2100AEF25E /* Assets.xcassets */; };
 		AFC4D24B224E6B2100AEF25E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4D249224E6B2100AEF25E /* LaunchScreen.storyboard */; };
@@ -16,11 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF2C5223224E6DB9008B8123 /* HJHMovieItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJHMovieItem.h; sourceTree = "<group>"; };
+		AF2C5224224E6DB9008B8123 /* HJHMovieItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJHMovieItem.m; sourceTree = "<group>"; };
+		AF2C5226224E7204008B8123 /* HJHMovieItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJHMovieItemController.h; sourceTree = "<group>"; };
+		AF2C5227224E7204008B8123 /* HJHMovieItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJHMovieItemController.m; sourceTree = "<group>"; };
+		AF2C5229224E797F008B8123 /* MovieC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieC-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF2C522A224E797F008B8123 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		AF2C522C224E7995008B8123 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		AFC4D23B224E6B2000AEF25E /* MovieC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC4D23E224E6B2000AEF25E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFC4D23F224E6B2000AEF25E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFC4D241224E6B2000AEF25E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AFC4D242224E6B2000AEF25E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFC4D245224E6B2000AEF25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFC4D247224E6B2100AEF25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFC4D24A224E6B2100AEF25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,17 +66,62 @@
 		AFC4D23D224E6B2000AEF25E /* MovieC */ = {
 			isa = PBXGroup;
 			children = (
+				AFC4D257224E6C9D00AEF25E /* Model */,
+				AFC4D256224E6C9200AEF25E /* Model Controllers */,
+				AFC4D255224E6C8800AEF25E /* View Controllers */,
+				AFC4D258224E6CA600AEF25E /* Storyboard */,
+				AFC4D254224E6C7F00AEF25E /* Resources */,
+			);
+			path = MovieC;
+			sourceTree = "<group>";
+		};
+		AFC4D254224E6C7F00AEF25E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				AFC4D23E224E6B2000AEF25E /* AppDelegate.h */,
 				AFC4D23F224E6B2000AEF25E /* AppDelegate.m */,
-				AFC4D241224E6B2000AEF25E /* ViewController.h */,
-				AFC4D242224E6B2000AEF25E /* ViewController.m */,
-				AFC4D244224E6B2000AEF25E /* Main.storyboard */,
 				AFC4D247224E6B2100AEF25E /* Assets.xcassets */,
 				AFC4D249224E6B2100AEF25E /* LaunchScreen.storyboard */,
 				AFC4D24C224E6B2100AEF25E /* Info.plist */,
 				AFC4D24D224E6B2100AEF25E /* main.m */,
 			);
-			path = MovieC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AFC4D255224E6C8800AEF25E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C522A224E797F008B8123 /* MovieListTableViewController.swift */,
+				AF2C5229224E797F008B8123 /* MovieC-Bridging-Header.h */,
+				AF2C522C224E7995008B8123 /* MovieTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AFC4D256224E6C9200AEF25E /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C5226224E7204008B8123 /* HJHMovieItemController.h */,
+				AF2C5227224E7204008B8123 /* HJHMovieItemController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		AFC4D257224E6C9D00AEF25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2C5223224E6DB9008B8123 /* HJHMovieItem.h */,
+				AF2C5224224E6DB9008B8123 /* HJHMovieItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFC4D258224E6CA600AEF25E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AFC4D244224E6B2000AEF25E /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,11 +150,13 @@
 		AFC4D233224E6B2000AEF25E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HJH;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Hannah Hoff";
 				TargetAttributes = {
 					AFC4D23A224E6B2000AEF25E = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,9 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC4D243224E6B2000AEF25E /* ViewController.m in Sources */,
+				AF2C5228224E7204008B8123 /* HJHMovieItemController.m in Sources */,
 				AFC4D24E224E6B2100AEF25E /* main.m in Sources */,
+				AF2C522D224E7995008B8123 /* MovieTableViewCell.swift in Sources */,
 				AFC4D240224E6B2000AEF25E /* AppDelegate.m in Sources */,
+				AF2C5225224E6DB9008B8123 /* HJHMovieItem.m in Sources */,
+				AF2C522B224E797F008B8123 /* MovieListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,15 +343,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5VMA54SBQ;
-				INFOPLIST_FILE = MovieC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.MovieC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieC/View Controllers/MovieC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -302,15 +364,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5VMA54SBQ;
-				INFOPLIST_FILE = MovieC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MovieC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hannahhoff.MovieC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieC/View Controllers/MovieC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
